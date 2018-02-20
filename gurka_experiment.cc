@@ -6,14 +6,12 @@ using namespace std;
 
 void test_adding(int octal, int dec, int hex)
 {
-        
-    printf("the decimal = %d the octal = %d the hex = %d\n", dec, octal, hex);
-
-    printf("lets try adding base 10 and 8 together %d", dec + octal);
     
-    printf("lets try adding base 8 and 16 together %d", octal + hex);
+    printf("lets try adding base 10 and 8 together %d\n", dec + octal);
+    
+    printf("lets try adding base 8 and 16 together %d\n", octal + hex);
 
-    printf("lets try adding base 10 and 16 together %d", dec + hex);
+    printf("lets try adding base 10 and 16 together %d\n", dec + hex);
 
 }
 
@@ -31,8 +29,9 @@ int main (int argc, char *argv[])
 
     octal = 012;
     dec = 10;
-    hex = 0x10;
+    hex = 0xA;
 
+    printf("the decimal = %d the octal = %d the hex = %d\n", dec, octal, hex);
 
     test_adding(octal, dec, hex);
 
