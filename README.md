@@ -13,3 +13,4 @@ and teach myself
     1. Java
     2. C/C++
     3. Python
+    4. Rust
