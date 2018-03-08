@@ -1,0 +1,15 @@
+# My git ignore using template from GitHub
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Metadata
+*.idea
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
