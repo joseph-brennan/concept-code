@@ -7,6 +7,9 @@
 
 # Metadata
 *.idea
+*/.metadata/
+
+*/.recommenders/
 
 # Compiled class file
 *.class
