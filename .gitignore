@@ -13,8 +13,8 @@
 
 # Compiled class file
 *.class
-*/.classpath/
-*/.project
+*.classpath
+*.project
 */.settings/
 
 # Log file
