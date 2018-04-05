@@ -6,8 +6,8 @@ class ID:
     def output(self):
         full = self.first + self.last
 
-        print("your full name is {} with initials {} {} with length of {}".format(
-            full, self.first[0], self.last[0], len(full)))
+        print("your full name is {} {} with initials {} {} with length of {}".format(
+            self.first, self.last, self.first[0], self.last[0], len(full)))
 
 
 if __name__ == '__main__':
