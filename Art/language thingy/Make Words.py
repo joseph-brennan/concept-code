@@ -1,6 +1,8 @@
 import random
 
-
+"""
+now czecha
+"""
 class WordGenerator:
     def __init__(self):
         self.vowel_choices = []
