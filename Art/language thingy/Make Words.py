@@ -1,40 +1,52 @@
+import random
+
+
 class WordGenerator:
     def __init__(self):
-        pass
+        self.vowel_choices = []
+        self.consonant_choices = []
+        self.syllable_choices = []
 
     def syllable(self):
-        choices = "CV"
+        self.syllable_choices = ["CV", "VC", "CVC"]
 
-        return choices
+        # return random.choice(choices)
 
     def vowel(self):
-        choices = "a"
+        self.vowel_choices = "a"
 
-        return choices
+        # return random.choice(choices)
 
     def consonant(self):
-        choices = "b"
+        self.consonant_choices = "b"
 
-        return choices
+        # return random.choice(choices)
 
     def word(self, numsyll):
         length = numsyll
 
         word, temp = "", ""
 
+        # hard coded for now to use the options above
+        self.syllable()
+        self.consonant()
+        self.vowel()
+
         for i in range(0, length):
-            temp += self.syllable()
+
+            temp += random.choice(self.syllable_choices)
 
             print("temp {}".format(temp))
 
-        for i in range(0, len(temp)):
-            if temp[i] == 'C':
-                word += self.consonant()
+        # this says for each letter in the "word" template. where letter is the C or V
+        for letter in temp:
+            if letter == 'C':
+                word += random.choice(self.consonant_choices)
 
                 print("C {}".format(word))
 
             else:
-                word += self.vowel()
+                word += random.choice(self.vowel_choices)
 
                 print("V {}".format(word))
 
