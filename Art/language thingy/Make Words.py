@@ -62,13 +62,9 @@ class MakeWords:
         :return: N/A
         """
         while True:
-            length = int(input("how many consents? "))
+            length = int(input("how many syllables would you like? "))
 
-            struct = input("what kind of word structure? ")
 
-            for key, name in self.structure.items():
-                if name == struct:
-                    self.individual_word(key, length)
 
             answer = input("Would you like another word?")
 
@@ -110,8 +106,8 @@ class MakeWords:
 if __name__ == '__main__':
     words = MakeWords()
 
-    top = tkinter.Tk()
-    top.mainloop()
+    #top = tkinter.Tk()
+    #top.mainloop()
 
     setup = input("Do you have a language file?")
 
