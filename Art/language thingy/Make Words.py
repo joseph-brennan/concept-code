@@ -7,6 +7,21 @@ class WordGenerator:
         self.vowel_choices = []
         self.consonant_choices = []
         self.syllable_choices = {}
+        self.numsyll = 0
+
+    def set_up(self):
+        try:
+            self.numsyll = int(input("Enter number of syllables: "))
+
+        except ValueError:
+            self.numsyll = input("Please enter an actual number: ")
+
+            if self.numsyll.isdigit():
+                self.numsyll = int(self.numsyll)
+
+            else:
+                print("Still not a number aborting.")
+                exit(-1)
 
     def syllable(self):
         self.syllable_choices = {1: "CV", 2: "VC", 3: "CVC"}
@@ -23,12 +38,10 @@ class WordGenerator:
 
         # return random.choice(choices)
 
-    def word(self, numsyll):
-        length = numsyll
-
+    def word(self):
         word, temp = "", ""
 
-        for i in range(0, length):
+        for i in range(0, self.numsyll):
 
             temp += random.choice(list(self.syllable_choices.values()))
 
@@ -53,29 +66,18 @@ class WordGenerator:
         self.vowel()
 
         while True:
-            try:
-                numsyll = int(input("Enter number of syllables: "))
+            self.set_up()
 
-            except ValueError:
-                numsyll = input("Please enter an actual number: ")
-
-                if numsyll.isdigit():
-                    numsyll = int(numsyll)
-
-                else:
-                    print("Still not a number aborting.")
-                    exit(-1)
-
-            if numsyll is -1:
+            if self.numsyll is -1:
                 break
 
-            elif numsyll is 0:
-                numsyll = random.randint(1, 4)
+            elif self.numsyll is 0:
+                self.numsyll = random.randint(1, 4)
 
             else:
                 pass
 
-            word = self.word(numsyll)
+            word = self.word()
 
             print("{}\n".format(word))
 
