@@ -1,7 +1,7 @@
 import math
 
 
-class test:
+class Test:
     def __init__(self):
         self.dummy = ""
 
@@ -28,8 +28,19 @@ class test:
                 break
         return gcd
 
+    def replace(self):
+        out = ""
+        replacement = {"a": "u", "e": "o", "u": "a"}
+        string = input("input ")
+        for letter in string:
+            if letter in replacement.keys():
+                out += replacement[letter]
+
+            else:
+                out += letter
+            print(out)
+
 
 if __name__ == '__main__':
-    foo = test()
-    foo.printer()
-    foo.gcd(40, 10)
+    foo = Test()
+    foo.replace()
