@@ -24,4 +24,5 @@ set wildmenu
 set wildmode=full
 
 " windows seems to need this command to use backspace properly
-set backspace=indent,eol,start 
+" set backspace=indent,eol,start 
+set spell
