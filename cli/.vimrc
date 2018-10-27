@@ -25,4 +25,11 @@ set wildmode=full
 
 " windows seems to need this command to use backspace properly
 " set backspace=indent,eol,start 
+
 set spell
+
+" use F2 key to toggle paste mode to properly intent on and off depending which is needed
+set pastetoggle=<F2>
+
+" shows you the extra mode in use ie. --insert--(paste) when toggled on
+set showmode
