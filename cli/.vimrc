@@ -24,6 +24,7 @@ set mouse=a
 
 set ignorecase
 set smartcase
+set hlsearch
 
 set wildmenu
 set wildmode=full
@@ -40,4 +41,4 @@ set pastetoggle=<F2>
 set showmode
 
 let g:auto_save = 1                   " enable AutoSave on Vim startup
-set g:auto_save_no_updatetime = 0     " do not change the updatetime option
+let g:auto_save_no_updatetime = 0     " do not change the updatetime option
