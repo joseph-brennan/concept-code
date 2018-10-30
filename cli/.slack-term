@@ -1,3 +1,4 @@
+// https://github.com/erroneousboat/slack-term/wiki
 {
     "slack_token": "xoxp-[slack code]",
     "notify": "all",
