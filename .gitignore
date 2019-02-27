@@ -1,4 +1,5 @@
 # My git ignore using template from GitHub
+# always use gitignore.io
 
 # Executables
 *.exe
